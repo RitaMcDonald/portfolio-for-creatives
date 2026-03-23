@@ -32,8 +32,7 @@
 /* TODO: Replace these Google Fonts with the ones you want to use on your site. */
 /* Remember, the more fonts you load, the longer it can take for your page to load. */
 
-/* instrument sans */
-@import url("https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Instrument+Serif:ital@0;1&display=swap");
 
 /*
 
@@ -57,9 +56,6 @@
 
 /* File for animation effects that make elements blink */
 @import url("make-something-blink.css");
-
-/* File for adding a smooth animated gradient background */
-@import url("animated-gradient.css");
 
 /* File for adding a glitch animation to your 404 error page */
 @import url("error.css");
@@ -99,26 +95,26 @@
 
 :root {
   /* Typography */
-  --font-family-body: "Instrument Sans";
-  --font-family-heading: "Instrument Sans";
-  --font-family-project-title: "Instrument Sans";
+  --font-family-body: "Instrument Sans", sans-serif;
+  --font-family-heading: "Instrument Serif", serif;
+  --font-family-project-title: "Instrument Serif", serif;
   /* Core Colours */
   --color-text-primary: #222;
   --color-text-secondary: #333;
-  --color-accent-primary: #5200ff;
-  --color-accent-secondary: #ff057c;
+  --color-accent-primary: #000000;
+  --color-accent-secondary: #e3dcf9;
   --color-overlay-primary: rgba(82, 0, 255, 0.5);
   --color-highlight: lemonchiffon;
   --color-fallback: #ff057c; /* Fallback color for glitch effect on 404 page */
   /* Backgrounds */
-  --color-bg: #fdfdfd;
+  --color-bg: #b1a1e4;
   --color-bg-about: #f5f5f5;
   --color-bg-footer: #f5f5f5;
-  --color-bg-holding-page: rgba(82, 0, 255, 0.6);
+  --color-bg-holding-page: #b1a1e4;
   /* Headings */
-  --h1-color: #5200ff;
-  --h2-color: #5200ff;
-  --h3-color: #5200ff;
+  --h1-color: #1d0d5f;
+  --h2-color: #b1a1e5;
+  --h3-color: #b1a1e5;
   --h4-color: #5200ff;
   --h5-color: #5200ff;
   --h6-color: #5200ff;
@@ -127,31 +123,26 @@
   --color-text-project-category: #ffffff;
   --color-text-project-description: #222;
   --color-text-project-sidebar: #222;
-  --color-text-project-title: #5200ff;
+  --color-text-project-title: #1d0d5f;
   --color-text-work-grid-title: #ffffff;
   /* Link States */
-  --color-link: #5200ff;
-  --color-link-hover: #111;
-  --color-link-visited: #5200ff;
+  --color-link: #1d0d5f;
+  --color-link-hover: pink;
+  --color-link-visited: #222;
   /* Navigation */
-  --color-nav-link: #5200ff;
-  --color-nav-link-hover: #321575;
-  --color-nav-arrow: #5200ff;
-  --color-nav-arrow-hover: #000;
-  --color-nav-arrow-stroke: #5200ff;
+  --color-nav-link: #222;
+  --color-nav-link-hover: pink;
+  --color-nav-arrow: #222;
+  --color-nav-arrow-hover: pink;
+  --color-nav-arrow-stroke: #222;
   --color-nav-arrow-stroke-hover: #000;
   /* Components */
   --color-bg-full-width: #f5f5f5;
   --color-bg-project-description: #f5f5f5;
   --color-bg-sidebar-project: orangered;
   --color-bg-sidebar-work: lemonchiffon;
-  --color-gradient-hero: linear-gradient(90deg, #ff00ff, #00ffff);
-  --color-gradient-project-details: linear-gradient(
-    -225deg,
-    #ff057c 0%,
-    #8d0b93 50%,
-    #321575 100%
-  );
+  --color-gradient-hero: linear-gradient(90deg, white);
+
   /* Special Elements */
   --color-icon-heart: darkred;
   --color-text-holding-footer: #f8f8ff;
@@ -220,7 +211,7 @@ html {
 }
 
 body {
-  font-family: "Instrument Sans";
+  font-family: var(--font-family-body);
   color: var(--color-text-primary);
   background: var(--color-bg);
   display: flex;
@@ -448,7 +439,7 @@ svg {
 
 h1 {
   font-size: 2.2rem;
-  font-family: "Instrument Sans";
+
   line-height: 1.2;
   margin-bottom: 1rem;
   color: var(--h1-color);
@@ -456,7 +447,7 @@ h1 {
 
 h2 {
   font-size: 2rem;
-  font-family: "Instrument Sans";
+
   line-height: 1.2;
   margin-bottom: 1rem;
   color: var(--h2-color);
@@ -522,7 +513,7 @@ sup {
 
 /* Main hero headline — usually sits in the intro section */
 .hero-headline {
-  font-family: "Instrument Sans";
+  font-family: var(--font-family-heading);
   color: var(--color-accent-primary); /* Uses your brand's dominant color */
   max-width: 40ch; /* Optimal line length for readability (~40 characters) */
   text-wrap: balance; /* Prevents awkward line breaks (like elegant typography) */
@@ -532,7 +523,7 @@ sup {
 /* Large project title — appears on individual project pages */
 .project-title {
   font-size: 3.625rem;
-  font-family: "Instrument Sans";
+
   color: var(--color-text-project-title);
   margin-bottom: 1rem;
 }
