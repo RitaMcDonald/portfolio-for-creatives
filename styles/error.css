@@ -2,20 +2,22 @@
 .error-hero {
   min-height: 100vh;
 
-  .error-content h1 {
-    font-size: clamp(4rem, 10vw, 8rem);
-    color: white;
-  }
-  background-image:
-    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("../assets/branding-images/rita-mcdonald-header.png");
-
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+
   text-align: center;
+  padding: 2rem;
+}
+
+.error-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.error-404 {
+  font-size: 8rem;
+  color: white;
 }
