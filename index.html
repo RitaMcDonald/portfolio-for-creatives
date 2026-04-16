@@ -148,47 +148,39 @@
         </ul>
       </section>
     </main>
-    <ul class="footer-global">
-      <li class="footer-tagline">
-        <h2>Let's Connect!</h2>
-        <p>You can view more of my work here!</p>
-      </li>
+    <footer class="footer">
+      <div class="footer-inner">
+        <!-- LEFT: BRAND / MESSAGE -->
+        <div class="footer-brand">
+          <h2>Rita McDonald</h2>
+          <p>UX Design Student creating thoughtful digital experiences.</p>
+        </div>
 
-      <li class="footer-contact-social">
-        <h2>Contact & Social</h2>
-        <ul class="footer-socials-list">
-          <li class="footer-item"><a href="#">Insta</a></li>
-          <li class="footer-item"><a href="#">LinkedIn</a></li>
-        </ul>
-      </li>
+        <!-- MIDDLE: NAV -->
+        <div class="footer-nav">
+          <h4>Explore</h4>
+          <ul>
+            <li><a href="index.html">Work</a></li>
+            <li><a href="play.html">Play</a></li>
+            <li><a href="about.html">About</a></li>
+          </ul>
+        </div>
 
-      <li class="footer-full-width">
-        <p><a href="#top">Smooth scroll to the top</a></p>
+        <!-- RIGHT: SOCIAL -->
+        <div class="footer-social">
+          <h4>Connect</h4>
+          <ul>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">LinkedIn</a></li>
+          </ul>
+        </div>
+      </div>
 
-        <script>
-          document.getElementById("copyright-years").textContent +=
-            new Date().getFullYear();
-        </script>
-      </li>
-    </ul>
-
-    <div id="myID" class="bottomMenu hide">
-      <a href="#">Back to top</a>
-    </div>
-
-    <script>
-      myID = document.getElementById("myID");
-
-      var myScrollFunc = function () {
-        var y = window.scrollY;
-        if (y >= 800) {
-          myID.className = "bottomMenu show";
-        } else {
-          myID.className = "bottomMenu hide";
-        }
-      };
-
-      window.addEventListener("scroll", myScrollFunc);
-    </script>
+      <!-- BOTTOM BAR -->
+      <div class="footer-bottom">
+        <p>© 2026 Rita McDonald</p>
+        <a href="#top">Back to top ↑</a>
+      </div>
+    </footer>
   </body>
 </html>
