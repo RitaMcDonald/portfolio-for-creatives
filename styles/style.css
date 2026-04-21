@@ -785,7 +785,7 @@ a.nav-link-primary:hover {
 }
 .hero-headline {
   font-family: "Libre Caslon Text", serif;
-  font-size: 8rem;
+  font-size: 5rem;
   color: #f8f8ff;
 
   /* white glow */
@@ -1774,6 +1774,69 @@ to keep your styles reusable and consistent.
   }
 }
 
+/* =========================
+   📱 MOBILE FIXES ONLY
+   ========================= */
+
+@media (max-width: 600px) {
+  /* NAVIGATION */
+  .nav-branding {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75rem;
+  }
+
+  .nav-branding-group {
+    display: flex;
+    gap: 1.25rem;
+  }
+
+  .nav-branding-group a {
+    font-size: 1.1rem;
+    padding: 0.25rem 0.5rem;
+  }
+
+  /* HERO TEXT */
+  .hero-headline {
+    font-size: 2.5rem; /* only small on mobile */
+    line-height: 1.2;
+    padding: 0 1rem;
+  }
+
+  /* TEXT */
+  p {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
+  /* SPACING */
+  .section-container,
+  .project-description-container {
+    padding: 1rem;
+  }
+
+  /* PLAY GRID */
+  .masonry-grid {
+    padding: 1rem !important;
+    gap: 1rem !important;
+  }
+
+  /* FOOTER */
+  .footer {
+    padding: 2rem 1rem;
+  }
+
+  .footer-inner {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    gap: 0.5rem;
+    text-align: center;
+  }
+}
 /*
 
 ███████ ██ ███    ██
